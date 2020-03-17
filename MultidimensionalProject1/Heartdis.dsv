@@ -1,0 +1,97 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e9a64377-b1cf-42a2-97d6-a39d90f9b7c1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Heartdis</ID>
+  <Name>Heartdis</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Heartdis</DataSourceID>
+  <Schema>
+    <xs:schema id="Heartdis" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Heartdis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="445ebb3d-57b5-4046-941e-82b2dd1604d4">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_heartdataset" msprop:design-time-name="b9dcbd7b-4278-4cd9-9607-f18ed0cdb800" msprop:DbTableName="heartdataset" msprop:FriendlyName="heartdataset" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2a13a745-db04-4098-aa3b-af1aacea4175" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="age" msprop:design-time-name="057fda82-0247-467f-b962-e15763f946e6" msprop:DbColumnName="age" msprop:FriendlyName="age" type="xs:double" minOccurs="0" />
+                  <xs:element name="chest_pain_type" msprop:design-time-name="d94e25fc-dad9-467c-b170-2d213232210b" msprop:DbColumnName="chest_pain_type" msprop:FriendlyName="chest_pain_type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="rest_blood_pressure" msprop:design-time-name="f399fc33-7d02-4b20-9be2-7acc35b2ebbd" msprop:DbColumnName="rest_blood_pressure" msprop:FriendlyName="rest_blood_pressure" type="xs:double" minOccurs="0" />
+                  <xs:element name="blood_sugar" msprop:design-time-name="4733b642-14f9-4ac9-8663-70d1acf751cb" msprop:DbColumnName="blood_sugar" msprop:FriendlyName="blood_sugar" type="xs:boolean" />
+                  <xs:element name="rest_electro" msprop:design-time-name="3d927537-1a47-47d1-a61c-43e8a2b8a0cb" msprop:DbColumnName="rest_electro" msprop:FriendlyName="rest_electro" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="max_heart_rate" msprop:design-time-name="24a736b8-bb46-4114-8572-5b25d7ec0b0d" msprop:DbColumnName="max_heart_rate" msprop:FriendlyName="max_heart_rate" type="xs:double" minOccurs="0" />
+                  <xs:element name="exercice_angina" msprop:design-time-name="d4884463-ec85-44fa-9b0e-d1dcd7852772" msprop:DbColumnName="exercice_angina" msprop:FriendlyName="exercice_angina" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="disease" msprop:design-time-name="04b6025a-d5a4-4439-80f8-0f8d2641d8ac" msprop:DbColumnName="disease" msprop:FriendlyName="disease" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_heartdataset" />
+          <xs:field xpath="id" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <Heartdis xmlns="" />
+  </Schema>
+</DataSourceView>
